@@ -23,10 +23,25 @@
     .stored-photos {
       margin-top: 10px;
     }
+    .file-status {
+      margin-top: 10px;
+      display: none;
+    }
+    .file-status.visible {
+      display: block;
+    }
+    .checkmark {
+      color: #4CAF50;
+      margin-right: 5px;
+    }
   </style>
 </head>
 <body>
   <input type="file" id="photoInput" accept="image/*">
+  <div class="file-status" id="fileStatus">
+    <span class="checkmark">✓</span>
+    Selected file: <span id="fileName"></span>
+  </div>
   <button id="uploadBtn" class="button">Upload Photo</button>
   <div id="preview"></div>
   <div class="stored-photos">
