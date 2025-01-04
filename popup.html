@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Storage</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    #preview {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      cursor: pointer;
+      margin: 4px 2px;
+    }
+    .stored-photos {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <input type="file" id="photoInput" accept="image/*">
+  <button id="uploadBtn" class="button">Upload Photo</button>
+  <div id="preview"></div>
+  <div class="stored-photos">
+    <h3>Stored Photos:</h3>
+    <div id="storedPhotos"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
